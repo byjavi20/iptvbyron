@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reproductor de Canales en Vivo</title>
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reproductor de Canales en Vivo</title>
+<style>
         body { background-color: black; color: white; font-family: Arial, sans-serif; margin: 0; }
         h2 { font-size: 24px; margin: 20px; text-align: center; }
         .container { display: flex; height: 100vh; }
@@ -33,47 +34,9 @@
     </style>
 </head>
 <body>
-    <h2>Selecciona un Canal en Vivo</h2>
-    <div class="container">
-        <div class="sidebar">
-<div class="category">
-<h3>24x7</h3>
-<ul class="channel-list">
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/24x7/ben10/master.m3u8')">Ben 10</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/24x7/bobesponja/master.m3u8')">Bob Esponja</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/24x7/casocerrado/master.m3u8')">Caso Cerrado</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/24x7/chapulincolorado/master.m3u8')">Chapulin Colorado</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/24x7/chespirito/master.m3u8')">Chespirito</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/24x7/correcaminos/master.m3u8')">Correcaminos</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/24x7/dinosaurios/master.m3u8')">Dinosaurios</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/24x7/dragonballsuper/master.m3u8')">Dragon Ball Super</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/24x7/elprincipedelrap/master.m3u8')">El príncipe del rap</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/24x7/familiapeluche/master.m3u8')">Familia Peluche</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/24x7/lospicapiedras/master.m3u8')">Los Picapiedras</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/24x7/lossimpsons/master.m3u8')">Los Simpsons</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/24x7/padrinosmagicos/master.m3u8')">Padrinos Magícos</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/24x7/southpark/master.m3u8')">South Park</li>
-</ul>
-</div>
-<div class="category">
-<h3>Cultura</h3>
-<ul class="channel-list">
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/cultura/animalplanet/master.m3u8')">Animal Planet</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/cultura/discoverychannel/master.m3u8')">Discovery Channel</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/cultura/discoveryh_h/master.m3u8')">Discovery H&H</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/cultura/discoveryscience/master.m3u8')">Discovery Science</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/cultura/discoverytheater/master.m3u8')">Discovery Theater</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/cultura/discoveryturbo/master.m3u8')">Discovery Turbo</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/cultura/discoveryworld/master.m3u8')">Discovery World</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/cultura/elgourmet/master.m3u8')">El Gourmet</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/cultura/h2/master.m3u8')">H2</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_3/cultura/history/master.m3u8')">History</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/cultura/history/master.m3u8')">History</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/cultura/discoveryid/master.m3u8')">ID</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/cultura/nationalgeographic/master.m3u8')">National Geographic</li>
-</ul>
-</div>
-<div class="category">
+<h2>Selecciona un Canal en Vivo</h2>
+<div class="container">
+<div class="sidebar"><div class="category">
 <h3>Deportes</h3>
 <ul class="channel-list">
 <li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_2/deportes/beinsportsextran/master.m3u8')">Bein Sports Extra Ñ</li>
@@ -102,11 +65,56 @@
 <li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_2/deportes/tycsports/master.m3u8')">TyC Sports</li>
 <li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_2/deportes/winsportsplus/master.m3u8')">Win Sports Plus</li>
 </ul>
-</div>
-<div class="category">
+</div><div class="category">
+<h3>Mundo</h3>
+<ul class="channel-list">
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/atv/master.m3u8')">ATV</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/azteca7/master.m3u8')">Azteca 7</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/aztecauno/master.m3u8')">Azteca Uno</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/canal5/master.m3u8')">Canal 5</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/canal_e/master.m3u8')">Canal E!</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/caracol/master.m3u8')">Caracol TV</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/cnnenespanol/master.m3u8')">CNN en Español</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/dwchannel/master.m3u8')">DW Channel</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/ecuavisa/master.m3u8')">Ecuavisa</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/eltrece/master.m3u8')">El Trece</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/galavision/master.m3u8')">Galavisión</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/imagenmx/master.m3u8')">Imagen TV</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/lasestrellas/master.m3u8')">Las Estrellas</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/latina/master.m3u8')">Latina TV</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/pasiones/master.m3u8')">Pasiones</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/rcn/master.m3u8')">RCN</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_3/mundo/rcn/master.m3u8')">RCN</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/telefe/master.m3u8')">Telefe</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/telemundopuertorico/master.m3u8')">Telemundo Puerto Rico</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/tlc/master.m3u8')">TLC</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/tlnovelas/master.m3u8')">tlnovelas</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_3/mundo/tlnovelas/master.m3u8')">tlnovelas</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/unicable/master.m3u8')">Unicable</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/univision/master.m3u8')">Univisión</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/willaxtv/master.m3u8')">Willax TV</li>
+</ul>
+</div><div class="category">
+<h3>Cultura</h3>
+<ul class="channel-list">
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/cultura/animalplanet/master.m3u8')">Animal Planet</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/cultura/discoverychannel/master.m3u8')">Discovery Channel</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/cultura/discoveryh_h/master.m3u8')">Discovery H&amp;H</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/cultura/discoveryscience/master.m3u8')">Discovery Science</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/cultura/discoverytheater/master.m3u8')">Discovery Theater</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/cultura/discoveryturbo/master.m3u8')">Discovery Turbo</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/cultura/discoveryworld/master.m3u8')">Discovery World</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/cultura/elgourmet/master.m3u8')">El Gourmet</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/cultura/h2/master.m3u8')">H2</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_3/cultura/history/master.m3u8')">History</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/cultura/history/master.m3u8')">History</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/cultura/discoveryid/master.m3u8')">ID</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/cultura/nationalgeographic/master.m3u8')">National Geographic</li>
+</ul>
+</div><div class="category">
 <h3>Entretenimiento</h3>
 <ul class="channel-list">
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/entretenimiento/a_e/master.m3u8')">A&E</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/entretenimiento/a_e/master.m3u8')">A&amp;E</li>
 <li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/entretenimiento/amc/master.m3u8')">AMC</li>
 <li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/entretenimiento/antena3series/master.m3u8')">Antena 3 Series</li>
 <li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_3/entretenimiento/axn/master.m3u8')">AXN</li>
@@ -159,14 +167,7 @@
 <li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/entretenimiento/usatv/master.m3u8')">USA TV</li>
 <li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/entretenimiento/warnerchannel/master.m3u8')">Warner Channel</li>
 </ul>
-</div>
-<div class="category">
-<h3>Eventos</h3>
-<ul class="channel-list">
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_0/eventos/evento01/master.m3u8')">Teleclub</li>
-</ul>
-</div>
-<div class="category">
+</div><div class="category">
 <h3>Infantil</h3>
 <ul class="channel-list">
 <li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_3/infantil/cartoonnetwork/master.m3u8')">Cartoon Network</li>
@@ -179,38 +180,7 @@
 <li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/infantil/nick/master.m3u8')">Nick</li>
 <li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/infantil/tooncast/master.m3u8')">Tooncast</li>
 </ul>
-</div>
-<div class="category">
-<h3>Mundo</h3>
-<ul class="channel-list">
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/atv/master.m3u8')">ATV</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/azteca7/master.m3u8')">Azteca 7</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/aztecauno/master.m3u8')">Azteca Uno</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/canal5/master.m3u8')">Canal 5</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/canal_e/master.m3u8')">Canal E!</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/caracol/master.m3u8')">Caracol TV</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/cnnenespanol/master.m3u8')">CNN en Español</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/dwchannel/master.m3u8')">DW Channel</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/ecuavisa/master.m3u8')">Ecuavisa</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/eltrece/master.m3u8')">El Trece</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/galavision/master.m3u8')">Galavisión</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/imagenmx/master.m3u8')">Imagen TV</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/lasestrellas/master.m3u8')">Las Estrellas</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/latina/master.m3u8')">Latina TV</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/pasiones/master.m3u8')">Pasiones</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/rcn/master.m3u8')">RCN</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_3/mundo/rcn/master.m3u8')">RCN</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/telefe/master.m3u8')">Telefe</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/telemundopuertorico/master.m3u8')">Telemundo Puerto Rico</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/tlc/master.m3u8')">TLC</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/tlnovelas/master.m3u8')">tlnovelas</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_3/mundo/tlnovelas/master.m3u8')">tlnovelas</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/unicable/master.m3u8')">Unicable</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/univision/master.m3u8')">Univisión</li>
-<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/mundo/willaxtv/master.m3u8')">Willax TV</li>
-</ul>
-</div>
-<div class="category">
+</div><div class="category">
 <h3>Musica</h3>
 <ul class="channel-list">
 <li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/musica/htv/master.m3u8')">HTV</li>
@@ -220,17 +190,38 @@
 <li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/musica/telehit/master.m3u8')">Telehit</li>
 <li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/musica/toplatino/master.m3u8')">Top Latino</li>
 </ul>
-</div>
-
-        </div>
-        <div class="main-content">
-            <video id="videoPlayer" controls autoplay>
-                <source id="videoSource" src="" type="application/vnd.apple.mpegurl">
+</div><div class="category">
+<h3>24x7</h3>
+<ul class="channel-list">
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/24x7/ben10/master.m3u8')">Ben 10</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/24x7/bobesponja/master.m3u8')">Bob Esponja</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/24x7/casocerrado/master.m3u8')">Caso Cerrado</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/24x7/chapulincolorado/master.m3u8')">Chapulin Colorado</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/24x7/chespirito/master.m3u8')">Chespirito</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/24x7/correcaminos/master.m3u8')">Correcaminos</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/24x7/dinosaurios/master.m3u8')">Dinosaurios</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/24x7/dragonballsuper/master.m3u8')">Dragon Ball Super</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/24x7/elprincipedelrap/master.m3u8')">El príncipe del rap</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/24x7/familiapeluche/master.m3u8')">Familia Peluche</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/24x7/lospicapiedras/master.m3u8')">Los Picapiedras</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/24x7/lossimpsons/master.m3u8')">Los Simpsons</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/24x7/padrinosmagicos/master.m3u8')">Padrinos Magícos</li>
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_1/24x7/southpark/master.m3u8')">South Park</li>
+</ul>
+</div><div class="category">
+<h3>Eventos</h3>
+<ul class="channel-list">
+<li class="channel-item" onclick="playChannel('http://tv.teleclub.xyz/stream/server_0/eventos/evento01/master.m3u8')">Teleclub</li>
+</ul>
+</div></div>
+<div class="main-content">
+<video autoplay="" controls="" id="videoPlayer">
+<source id="videoSource" src="" type="application/vnd.apple.mpegurl"/>
                 Tu navegador no soporta video.
             </video>
-        </div>
-    </div>
-    <script>
+</div>
+</div>
+<script>
         function playChannel(url) {
             var videoPlayer = document.getElementById('videoPlayer');
             var videoSource = document.getElementById('videoSource');
